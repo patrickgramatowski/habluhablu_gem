@@ -1,5 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.7
+  Exclude:
+    - 'spec/**/*'
 
 Layout/EndOfLine:
   Enabled: false
@@ -15,6 +17,13 @@ Style/StringLiteralsInInterpolation:
 Layout/LineLength:
   Max: 120
 
-Metrics/BlockLength:
+Metrics/MethodLength:
+  Max: 11
+
+Style/IfUnlessModifier:
   Exclude:
-    - "spec/**/*"
+    - 'lib/**/*'
+
+Style/RaiseArgs:
+  Exclude:
+    - 'lib/habluhablu.rb'
