@@ -39,7 +39,7 @@ Generate file for a specific language using `habluhablu -language <language>` co
 
 ### Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/patrickgramatowski/habluhablu.
+Bug reports and pull requests are welcome on GitHub at https://github.com/patrickgramatowski/habluhablu_gem.
 
 ### License
 
