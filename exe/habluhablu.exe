@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "optparse"
+require "habluhablu"
+
+OptionParser.new do |opts|
+  opts.banner = "Generate files including basic phrases translations (using with I18n gem)."
+
+  opts.on("-l", "--language SYMBOL", "The symbol of a language you want to generate file for.")
+
+end.parse!(into: args)
+
+Habluhablu.hablu(args[:language])
+
+puts "..."
+sleep 0.5
+puts "File for #{args[:language]} language has been generated!"
