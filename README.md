@@ -35,7 +35,7 @@ Or install it yourself as:
 
 ### Usage
 
-Generate file for a specific language using `hablu <language>` command.
+Generate file for a specific language using `habluhablu -language <language>` command.
 
 ### Development
 
