@@ -2,6 +2,8 @@
 
 HabluHablu is a gem which allows you to generate language file with translations of the most useful phrases.
 
+There is also an option to add countries flag using bootstrap (for more informations go to languages/Countries_Flags.md).
+
 ## Supported languages
 
 - English
