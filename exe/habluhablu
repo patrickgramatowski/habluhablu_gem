@@ -1,32 +1,6 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
-# Class comment
-=begin
-require "thor"
-require "habluhablu"
-
-class CLI < Thor
-  desc "help", "some"
-  desc "<language>", "Generate file .yml"
-  long_desc <<-LONGDESC
-    Generate files including basic phrases translations (using with I18n gem).
-  LONGDESC
-  def language(symbol)
-    Habluhablu.hablu(symbol)
-    if File.exist?("config/locales/#{symbol}.yml")
-      puts "..."
-      sleep 0.5
-      puts "File for #{symbol.upcase} language has been generated successfully!"
-    else
-      puts "Something went wrong!"
-    end
-  end
-end
-
-CLI.start(ARGV)
-=end
-
 require "optparse"
 require "habluhablu"
 
