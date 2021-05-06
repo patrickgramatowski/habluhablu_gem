@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/habluhablu.svg)](https://badge.fury.io/rb/habluhablu)
+
 # HabluHablu
 
 HabluHablu is a library/CLI written in Ruby, which allows you to generate language file with translations of the most useful phrases.
