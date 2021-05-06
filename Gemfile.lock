@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    habluhablu (0.1.1)
+    habluhablu (0.1.2)
 
 GEM
   remote: https://rubygems.org/
@@ -40,7 +40,6 @@ GEM
     rubocop-ast (1.5.0)
       parser (>= 3.0.1.1)
     ruby-progressbar (1.11.0)
-    thor (1.1.0)
     unicode-display_width (2.0.0)
 
 PLATFORMS
@@ -51,7 +50,6 @@ DEPENDENCIES
   rake (~> 13.0)
   rspec (~> 3.0)
   rubocop (~> 1.7)
-  thor
 
 BUNDLED WITH
    2.2.14
