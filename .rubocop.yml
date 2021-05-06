@@ -18,6 +18,8 @@ Layout/LineLength:
   Max: 120
 
 Metrics/MethodLength:
+  Exclude:
+    - 'lib/languages/languages.rb'
   Max: 20
 
 Style/IfUnlessModifier:
