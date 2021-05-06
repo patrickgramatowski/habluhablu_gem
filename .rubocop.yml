@@ -1,5 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.7
+  SuggestExtensions: false
+  NewCops: enable
   Exclude:
     - 'spec/**/*'
 
@@ -29,3 +31,7 @@ Style/IfUnlessModifier:
 Style/RaiseArgs:
   Exclude:
     - 'lib/habluhablu.rb'
+
+Style/IfWithBooleanLiteralBranches:
+  Exclude:
+    - 'lib/languages/languages.rb'
