@@ -2,7 +2,7 @@
 
 # HabluHablu
 
-HabluHablu is a library/CLI written in Ruby, which allows you to generate language file with translations of the most useful phrases.
+HabluHablu is a CLI written in Ruby, which allows you to generate language file with translations of the most useful phrases.
 
 ## Supported languages
 
