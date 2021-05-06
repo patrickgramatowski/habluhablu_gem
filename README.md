@@ -8,9 +8,8 @@ There is also an option to add countries flag using bootstrap (for more informat
 
 - English
 - Polish
+- Arabic
 - Spanish
-- German
-- French
 - Hebrew
 - If you want to help me out and add your language, then contact me patrick.gramatowski@gmail.com
 - In progress...
