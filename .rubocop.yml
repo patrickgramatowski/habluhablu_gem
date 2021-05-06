@@ -35,3 +35,7 @@ Style/RaiseArgs:
 Style/IfWithBooleanLiteralBranches:
   Exclude:
     - 'lib/languages/languages.rb'
+
+Lint/ScriptPermission:
+  Exclude:
+    - 'bin/console'
