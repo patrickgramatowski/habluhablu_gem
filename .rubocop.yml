@@ -27,7 +27,3 @@ Style/IfUnlessModifier:
 Style/RaiseArgs:
   Exclude:
     - 'lib/habluhablu.rb'
-  
-Lint/ScriptPermission:
-  Exclude:
-    - 'bin/**/*'
