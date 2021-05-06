@@ -1,10 +1,11 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+# Class comment
+=begin
 require "thor"
 require "habluhablu"
 
-# Class comment
 class CLI < Thor
   desc "help", "some"
   desc "<language>", "Generate file .yml"
@@ -24,3 +25,23 @@ class CLI < Thor
 end
 
 CLI.start(ARGV)
+=end
+
+require "optparse"
+require "habluhablu"
+
+args = {}
+OptionParser.new do |opts|
+  opts.banner = "Generate files including basic phrases translations (using with I18n gem)"
+
+  opts.on("-l", "--language SYMBOL", "The unit of the unnamed, first amount argument")
+end.parse!(into: args)
+
+Habluhablu.hablu(args[:language])
+if File.exist?("config/locales/#{args[:language]}.yml")
+  puts "..."
+  sleep 0.5
+  puts "File for #{args[:language].upcase} language has been generated successfully!"
+else
+  puts "Something went wrong!"
+end
