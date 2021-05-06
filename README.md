@@ -11,7 +11,7 @@ There is also an option to add countries flag using bootstrap (for more informat
 - Arabic
 - Spanish
 - Hebrew
-- If you want to help me out and add your language, then contact me patrick.gramatowski@gmail.com
+- If you want to help me out and add your language, don't hesitate, I am waiting for You!
 - In progress...
 
 ### Installation
