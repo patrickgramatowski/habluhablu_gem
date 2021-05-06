@@ -8,19 +8,19 @@ class Languages
     @language = language.to_sym
     @languages = {
       ar: {
-        ar: { welcome: "مرحبا" }
+        "ar" => { "welcome" => "مرحبا" }
       },
       en: {
-        en: { welcome: "Welcome" }
+        "en" => { "welcome" => "Welcome" }
       },
       es: {
-        es: { welcome: "Bienvenido" }
+        "es" => { "welcome" => "Bienvenido" }
       },
       pl: {
-        pl: { welcome: "Witaj" }
+        "pl" => { "welcome" => "Witaj" }
       },
       iw: {
-        iw: { welcome: "שלום" }
+        "iw" => { "welcome" => "שלום" }
       }
     }
   end
