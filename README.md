@@ -38,6 +38,8 @@ Or install it yourself as:
 Generate file for a specific language using `habluhablu -l <symbol>` command.
 [List of symbols](https://www.w3.org/International/O-charset-lang.html)
 
+`habluhablu --help`
+
 ### Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/patrickgramatowski/habluhablu_gem.
