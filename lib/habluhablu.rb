@@ -29,13 +29,13 @@ module Habluhablu
 
     # Check if specified symbol's language does exist
     # if not, raise the custom error
-    if File.exist?("./languages/#{language}.yml").eql?(false)
+    if File.exist?("languages/#{language}.yml").eql?(false)
       raise WrongSymbolError.new(language)
     end
 
     # Create a file of specified language
     File.open("./config/locales/#{language}.yml", "w") do |f|
-      File.open("./languages/#{language}.yml") do |i18n|
+      File.open("languages/#{language}.yml") do |i18n|
         f.write(i18n.read.to_s)
       end
     end
