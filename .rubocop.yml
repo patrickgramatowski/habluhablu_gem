@@ -30,4 +30,4 @@ Style/RaiseArgs:
   
 Lint/ScriptPermission:
   Exclude:
-    - 'lib/**/*'
+    - 'bin/**/*'
