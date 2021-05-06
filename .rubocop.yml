@@ -18,7 +18,7 @@ Layout/LineLength:
   Max: 120
 
 Metrics/MethodLength:
-  Max: 11
+  Max: 20
 
 Style/IfUnlessModifier:
   Exclude:

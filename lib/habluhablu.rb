@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative "habluhablu/version"
+require_relative "languages/languages"
 
 # Module HabluHablu
 module Habluhablu
@@ -29,15 +30,14 @@ module Habluhablu
 
     # Check if specified symbol's language does exist
     # if not, raise the custom error
-    if File.exist?("languages/#{language}.yml").eql?(false)
+    language_class = Languages.new(language)
+    if language_class.include_language? == false
       raise WrongSymbolError.new(language)
     end
 
     # Create a file of specified language
     File.open("./config/locales/#{language}.yml", "w") do |f|
-      File.open("languages/#{language}.yml") do |i18n|
-        f.write(i18n.read.to_s)
-      end
+      f.write(language_class.render)
     end
   end
 end
