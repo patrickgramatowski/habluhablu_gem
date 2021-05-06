@@ -9,8 +9,10 @@ RSpec.describe Habluhablu do
 
   describe "I18n gem" do
     before(:all) do
-      Dir.mkdir("config")
-      Dir.mkdir("config/locales")
+      if Dir.exist?("./config/locales") == false
+        Dir.mkdir("config")
+        Dir.mkdir("config/locales")
+      end
     end
     context "when I18n gem included" do
       let(:directory) { Dir.exist?("./config/locales") }
@@ -31,8 +33,10 @@ RSpec.describe Habluhablu do
 
   describe ".hablu" do
     before(:all) do
-      Dir.mkdir("config")
-      Dir.mkdir("config/locales")
+      if Dir.exist?("./config/locales") == false
+        Dir.mkdir("config")
+        Dir.mkdir("config/locales")
+      end
     end
 
     context "when language specified" do
