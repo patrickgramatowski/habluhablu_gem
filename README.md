@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/habluhablu.svg)](https://badge.fury.io/rb/habluhablu)
+[![Build Status](https://travis-ci.org/patrickgramatowski/habluhablu_gem.svg?branch=master)](https://travis-ci.org/patrickgramatowski/habluhablu_gem)
 
 # HabluHablu
 
