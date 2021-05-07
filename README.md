@@ -8,9 +8,12 @@ HabluHablu is a CLI written in Ruby, which allows you to generate language file 
 ## Supported languages
 
 - English
+- Spanish
+- German
+- French
+- Italian
 - Polish
 - Arabic
-- Spanish
 - Hebrew
 - If you want to help me out and add your language, don't hesitate!
 - In progress...
