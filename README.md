@@ -5,7 +5,7 @@
 
 :earth_americas: HabluHablu is a CLI written in Ruby, which allows you to generate a language file (for I18n) with translations of the most useful phrases.
 
-The main goal for me is to create a library of translations for the most of languages and maybe even for the most popular dialects.
+:dart: The main goal for me is to create a library of translations for the most of languages and maybe even for the most popular dialects (what about Ancient Greek?). :scroll:
 
 ## Supported languages
 
