@@ -39,3 +39,7 @@ Style/IfWithBooleanLiteralBranches:
 Lint/ScriptPermission:
   Exclude:
     - 'bin/console'
+
+Metrics/ClassLength:
+  Exclude:
+    - 'lib/languages/languages.rb'

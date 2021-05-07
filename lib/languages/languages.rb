@@ -82,6 +82,51 @@ class Languages
           "forgot_password" => "שכחת את הסיסמא?",
           "do_not_have_account" => "אין לך חשבון?"
         }
+      },
+      fr: {
+        "fr" => {
+          "welcome" => "Bienvenu", # bienvenue female
+          "registration" => "Créer un compte",
+          "log_in" => "Connexion",
+          "log_in_with" => "Se connecter avec", # Example: 'with Facebook'
+          "log_out" => "Déconnexion",
+          "email_address" => "Adresse e-mail",
+          "username" => "Nom d'utilisateur",
+          "password" => "Mot de passe",
+          "remember_me" => "Mémoriser",
+          "forgot_password" => "Mot de passe oublié",
+          "do_not_have_account" => "Vous n'avez pas de compte?"
+        }
+      },
+      it: {
+        "it" => {
+          "welcome" => "Benvenuto", # benvenuta female
+          "registration" => "Iscriviti",
+          "log_in" => "Accedi",
+          "log_in_with" => "Accedi con", # Example: 'with Facebook'
+          "log_out" => "Esci",
+          "email_address" => "Indirizzo e-mail",
+          "username" => "Nome utente",
+          "password" => "Password",
+          "remember_me" => "Ricordami",
+          "forgot_password" => "Ho dimenticato la password",
+          "do_not_have_account" => "Non possiedi un account?"
+        }
+      },
+      de: {
+        "de" => {
+          "welcome" => "Willkommen",
+          "registration" => "Registrieren",
+          "log_in" => "Anmelden",
+          "log_in_with" => "Anmeldung mit", # Example: 'with Facebook'
+          "log_out" => "Abmelden",
+          "email_address" => "E-Mail-Adresse",
+          "username" => "Nutzername",
+          "password" => "Passwort",
+          "remember_me" => "Merken",
+          "forgot_password" => "Passwort vergessen?",
+          "do_not_have_account" => "Hast du noch kein FACEBOOK-Konto?" # Change facebook!
+        }
       }
     }
   end
