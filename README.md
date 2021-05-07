@@ -20,9 +20,9 @@ HabluHablu is a CLI written in Ruby, which allows you to generate language file 
 
 ### Installation
 
-Add this line to your application's Gemfile:
+**Important!** Install [I18n gem](https://github.com/ruby-i18n/i18n)
 
-Install [I18n gem](https://github.com/ruby-i18n/i18n)
+Add this line to your application's Gemfile:
 
 ```ruby
 gem 'habluhablu'
