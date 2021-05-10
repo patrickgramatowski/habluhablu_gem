@@ -34,7 +34,8 @@ Or install it yourself as:
 
 ### Usage
 
-Generate file for a specific language using `habluhablu -l <symbol>` command.
+Generate file for a specific language using `habluhablu -l <symbol>` command.  
+Generate files for a more languages using `habluhablu -m <symbols>(separated by '_')` command.  
 [List of symbols](https://www.w3.org/International/O-charset-lang.html)
 
 `habluhablu --help`
