@@ -22,11 +22,11 @@ if args[:multi].nil?
     puts "Something went wrong!"
   end
 else
-  languages_array = args[:multi].split
+  languages_array = args[:multi].split("_")
   languages_array.each do |language|
     Habluhablu.hablu(language)
   end
-  if File.exist?("config/locales/#{languages_array[last]}.yml")
+  if File.exist?("config/locales/#{languages_array.last}.yml")
     puts "..."
     sleep 0.5
     puts "Everything was generated successfully!"
