@@ -47,3 +47,7 @@ Metrics/ClassLength:
 Style/OptionalBooleanParameter:
   Exclude:
     - 'lib/languages/languages.rb'
+
+Style/OptionalBooleanParameter:
+  Exclude:
+    - 'lib/habluhablu.rb'
