@@ -43,3 +43,7 @@ Lint/ScriptPermission:
 Metrics/ClassLength:
   Exclude:
     - 'lib/languages/languages.rb'
+
+Style/OptionalBooleanParameter:
+  Exclude:
+    - 'lib/languages/languages.rb'

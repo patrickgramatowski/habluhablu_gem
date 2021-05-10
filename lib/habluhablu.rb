@@ -21,7 +21,7 @@ module Habluhablu
     end
   end
 
-  def self.hablu(language)
+  def self.hablu(language, lorem = false)
     # Check if I18n gem is included
     # if not, raise the custom error
     if Dir.exist?("./config/locales").eql?(false)
@@ -33,6 +33,10 @@ module Habluhablu
     language_class = Languages.new(language)
     if language_class.include_language? == false
       raise WrongSymbolError.new(language)
+    end
+
+    if lorem.eql?(true)
+      language_class.include_lorem(lorem)
     end
 
     # Create a file of specified language
