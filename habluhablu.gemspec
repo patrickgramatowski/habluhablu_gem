@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["patrick.gramatowski@gmail.com"]
 
   spec.summary       = "HabluHablu makes it easier to use I18n."
-  spec.description   = "The gem allows you to generate language file with translations of the most useful phrases."
+  spec.description   = "Generate language file (for I18n) with translations of the most useful phrases."
   spec.homepage      = "https://github.com/patrickgramatowski/habluhablu_gem"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.7.0")

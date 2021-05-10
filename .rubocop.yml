@@ -17,7 +17,7 @@ Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes
 
 Layout/LineLength:
-  Max: 120
+  Enabled: false
 
 Metrics/MethodLength:
   Exclude:
@@ -43,3 +43,8 @@ Lint/ScriptPermission:
 Metrics/ClassLength:
   Exclude:
     - 'lib/languages/languages.rb'
+
+Style/OptionalBooleanParameter:
+  Exclude:
+    - 'lib/languages/languages.rb'
+    - 'lib/habluhablu.rb'

@@ -19,7 +19,8 @@ class Languages
           "password" => "كلمه المرور",
           "remember_me" => "تذكرنى",
           "forgot_password" => "نسيت كلمة مرورك",
-          "do_not_have_account" => "ليس لديك حساب؟"
+          "do_not_have_account" => "ليس لديك حساب؟",
+          "lorem" => "غينيا واستمر العصبة ضرب قد. وباءت الأمريكي الأوربيين هو به،, هو العالم، الثقيلة بال. مع وايرلندا الأوروبيّون كان, قد بحق أسابيع العظمى واعتلاء. انه كل وإقامة المواد. "
         }
       },
       en: {
@@ -34,7 +35,8 @@ class Languages
           "password" => "Password",
           "remember_me" => "Remember me",
           "forgot_password" => "Forgot password?",
-          "do_not_have_account" => "Don't You have an account?"
+          "do_not_have_account" => "Don't You have an account?",
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
       es: {
@@ -49,7 +51,8 @@ class Languages
           "password" => "Contraseña",
           "remember_me" => "Recordarme",
           "forgot_password" => "¿Has olvidado tu contraseña?",
-          "do_not_have_account" => "¿No tienes una cuenta?"
+          "do_not_have_account" => "¿No tienes una cuenta?",
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
       pl: {
@@ -64,7 +67,8 @@ class Languages
           "password" => "Hasło",
           "remember_me" => "Zapamiętaj mnie!",
           "forgot_password" => "Zapomniałeś hasła?",
-          "do_not_have_account" => "Nie masz jeszcze konta?"
+          "do_not_have_account" => "Nie masz jeszcze konta?",
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
       iw: {
@@ -80,7 +84,8 @@ class Languages
           "password" => "סיסמה",
           "remember_me" => "זכור אותי",
           "forgot_password" => "שכחת את הסיסמא?",
-          "do_not_have_account" => "אין לך חשבון?"
+          "do_not_have_account" => "אין לך חשבון?",
+          "lorem" => "כדי יסוד מונחים מועמדים של, דת דפים מאמרשיחהצפה זאת. אתה דת שונה כלשהו, גם אחר ליום בשפות, או ניווט פולנית לחיבור ארץ. ויש בקלות ואמנות אירועים או, אל אינו כלכלה שתי."
         }
       },
       fr: {
@@ -95,7 +100,8 @@ class Languages
           "password" => "Mot de passe",
           "remember_me" => "Mémoriser",
           "forgot_password" => "Mot de passe oublié",
-          "do_not_have_account" => "Vous n'avez pas de compte?"
+          "do_not_have_account" => "Vous n'avez pas de compte?",
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
       it: {
@@ -110,7 +116,8 @@ class Languages
           "password" => "Password",
           "remember_me" => "Ricordami",
           "forgot_password" => "Ho dimenticato la password",
-          "do_not_have_account" => "Non possiedi un account?"
+          "do_not_have_account" => "Non possiedi un account?",
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
       de: {
@@ -125,7 +132,9 @@ class Languages
           "password" => "Passwort",
           "remember_me" => "Merken",
           "forgot_password" => "Passwort vergessen?",
-          "do_not_have_account" => "Hast du noch kein FACEBOOK-Konto?" # Change facebook!
+          "do_not_have_account" => "Hast du noch kein FACEBOOK-Konto?", # Change facebook!
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
         }
       }
     }
