@@ -14,7 +14,7 @@ class Languages
           "welcome" => "مرحبا",
           "registration" => "عنوان البريد الإلكتروني",
           "log_in" => "تسجيل الدخول",
-          "log_in_with" => "سجّل الدخول باستخدام حساب", # Example: 'with Facebook'
+          "log_in_with" => "#{replace} سجّل الدخول باستخدام حساب", # Example: 'with Facebook'
           "log_out" => "تسجيل الخروج",
           "email_address" => "عنوان البريد الإلكتروني",
           "username" => "اسم االمستخدم",
@@ -30,7 +30,7 @@ class Languages
           "welcome" => "Welcome",
           "registration" => "Registartion",
           "log_in" => "Log in",
-          "log_in_with" => "Log in with", # Example: 'with Facebook'
+          "log_in_with" => "Log in with #{replace}", # Example: 'with Facebook'
           "log_out" => "Log out",
           "email_address" => "Email address",
           "username" => "Username",
@@ -54,7 +54,7 @@ class Languages
           "welcome" => "Bienvenido",
           "registration" => "Regístrate",
           "log_in" => "Iniciar sesión",
-          "log_in_with" => "Iniciar sesión con", # Example: 'with Facebook'
+          "log_in_with" => "Iniciar sesión con #{replace}", # Example: 'with Facebook'
           "log_out" => "Cerrar la sesión",
           "email_address" => "Dirección de correo electrónico",
           "username" => "Nombre de usuario",
@@ -78,7 +78,7 @@ class Languages
           "welcome" => "Witaj",
           "registration" => "Zarejestruj się",
           "log_in" => "Zaloguj się",
-          "log_in_with" => "Zaloguj się za pomocą", # Example: 'with Facebook'
+          "log_in_with" => "Zaloguj się za pomocą #{replace}", # Example: 'with Facebook'
           "log_out" => "Wyolguj się",
           "email_address" => "Adres email",
           "username" => "Nazwa użytkownika",
@@ -95,7 +95,7 @@ class Languages
           "welcome" => "שלום",
           "registration" => "הירשם",
           "log_in" => "להתחבר",
-          "log_in_with" => "התחבר ל", # Example: 'with Facebook'
+          "log_in_with" => "#{replace}התחבר ל", # Example: 'with Facebook'
           "log_out" => "להתנתק",
           "email_address" => "אימייל",
           "username" => "שם משתמש",
@@ -111,7 +111,7 @@ class Languages
           "welcome" => "Bienvenu", # bienvenue female
           "registration" => "Créer un compte",
           "log_in" => "Connexion",
-          "log_in_with" => "Se connecter avec", # Example: 'with Facebook'
+          "log_in_with" => "Se connecter avec #{replace}", # Example: 'with Facebook'
           "log_out" => "Déconnexion",
           "email_address" => "Adresse e-mail",
           "username" => "Nom d'utilisateur",
@@ -127,7 +127,7 @@ class Languages
           "welcome" => "Benvenuto", # benvenuta female
           "registration" => "Iscriviti",
           "log_in" => "Accedi",
-          "log_in_with" => "Accedi con", # Example: 'with Facebook'
+          "log_in_with" => "Accedi con #{replace}", # Example: 'with Facebook'
           "log_out" => "Esci",
           "email_address" => "Indirizzo e-mail",
           "username" => "Nome utente",
@@ -143,7 +143,7 @@ class Languages
           "welcome" => "Willkommen",
           "registration" => "Registrieren",
           "log_in" => "Anmelden",
-          "log_in_with" => "Anmeldung mit", # Example: 'with Facebook'
+          "log_in_with" => "Anmeldung mit #{replace}", # Example: 'with Facebook'
           "log_out" => "Abmelden",
           "email_address" => "E-Mail-Adresse",
           "username" => "Nutzername",
@@ -165,7 +165,7 @@ class Languages
           "welcome" => "Bem-vindo",
           "registration" => "Cadastrar",
           "log_in" => "Entrar",
-          "log_in_with" => "Entrar com", # Example: 'with Facebook'
+          "log_in_with" => "Entrar com #{replace}", # Example: 'with Facebook'
           "log_out" => "Fazer logoff",
           "email_address" => "Endereço de E-mail",
           "username" => "Nome de usuário",
@@ -187,14 +187,14 @@ class Languages
           "welcome" => "Hoşgeldiniz",
           "registration" => "Kayıt Ol",
           "log_in" => "Giriş Yap",
-          "log_in_with" => "FACEBOOK ile giriş yap", # Example: 'with Facebook', reaplce facebook!
+          "log_in_with" => "#{replace} ile giriş yap", # Example: 'with Facebook'!
           "log_out" => "Çıkış Yap",
           "email_address" => "E-posta Adresi",
           "username" => "Kullanıcı adı",
           "password" => "Şifre",
           "remember_me" => "Beni hatırla",
           "forgot_password" => "Şifreni Mi Unuttun?",
-          "do_not_have_account" => "Bir FACEBOOK hesabın yok mu?", # Replace facebook!
+          "do_not_have_account" => "Bir #{tr_register} hesabın yok mu?", # Example: Facebook
           "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
