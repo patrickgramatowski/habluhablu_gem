@@ -44,9 +44,10 @@ Or install it yourself as:
 ### Usage
 
 Generate file for a specific language using `habluhablu -l <symbol>` command.  
-Generate files for a more languages using `habluhablu -m <symbols>(separated by '_')` command.  
-[List of symbols](https://www.w3.org/International/O-charset-lang.html)
-
+Generate an example language file using `habluhablu -l example` command (it generates empty file with keywords to fill).     
+Generate files for a more languages using `habluhablu -m <symbols>(separated by '_')` command.    
+[List of symbols](https://www.w3.org/International/O-charset-lang.html)   
+   
 `habluhablu --help`
 
 There is also an option to add countries flag using bootstrap (for more informations go to languages/Countries_Flags.md).

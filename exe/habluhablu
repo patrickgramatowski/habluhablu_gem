@@ -10,16 +10,24 @@ OptionParser.new do |opts|
 
   opts.on("-l", "--language SYMBOL", "Symbol of the language you want to generate file for (en, es, ...).")
   opts.on("-m", "--multi SYMBOLS", "Symbols of languages you want to generate files for (en es pl ar)")
+  opts.on("-k", "--keyword KEYWORD", "Add your own keyword for all language files (.yml).")
 end.parse!(into: args)
 
 if args[:multi].nil?
-  Habluhablu.hablu(args[:language])
-  if File.exist?("config/locales/#{args[:language]}.yml")
+  if args[:keyword].nil?
+    Habluhablu.hablu(args[:language])
+    if File.exist?("config/locales/#{args[:language]}.yml")
+      puts "..."
+      sleep 0.5
+      puts "Everything was generated successfully!"
+    else
+      puts "Something went wrong!"
+    end
+  else
+    Habluhablu.keyword(args[:keyword])
     puts "..."
     sleep 0.5
-    puts "Everything was generated successfully!"
-  else
-    puts "Something went wrong!"
+    puts "Everything was added successfully!"
   end
 else
   languages_array = args[:multi].split("_")
