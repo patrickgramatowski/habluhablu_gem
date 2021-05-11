@@ -15,6 +15,13 @@ module Habluhablu
   end
 
   # Cutom error with helpful message
+  class NoSampleError < Error
+    def initialize
+      super("There is no sample.yml file!")
+    end
+  end
+
+  # Cutom error with helpful message
   class GemI18nError < Error
     def initialize
       super("Install I18n gem!")
@@ -46,6 +53,19 @@ module Habluhablu
     languages.each do |file|
       File.open(file.to_s, "a") do |f|
         f.write(%(\n  #{keyword}: => ""))
+      end
+    end
+  end
+
+  def self.render_sample(languages)
+    raise NoSampleError.new unless File.exist?("config/locales/sample.yml")
+
+    languages = languages.split("_")
+    languages.each do |language|
+      File.open("config/locales/sample.yml", "r") do |f|
+        File.open("config/locales/#{language}.yml", "a+") do |fl|
+          fl.write(f.read)
+        end
       end
     end
   end
