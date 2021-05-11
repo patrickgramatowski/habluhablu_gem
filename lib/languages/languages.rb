@@ -41,6 +41,14 @@ class Languages
       },
       es: {
         "es" => {
+          "date" => {
+            "months_names" => %w[
+              Enero Febrero Marzo Abril Mayo Junio Julio Agosto Septiembre Octubre Noviembre Dieciembre
+            ],
+            "abbr_month_names" => %w[
+              Ene Feb Mar Abr May Jun Jul Ago Set Oct Nov Dic
+            ]
+          },
           "welcome" => "Bienvenido",
           "registration" => "Regístrate",
           "log_in" => "Iniciar sesión",
@@ -57,6 +65,14 @@ class Languages
       },
       pl: {
         "pl" => {
+          "date" => {
+            "months_names" => %w[
+              Styczeń Luty Marzec Kwiecień Maj Czerwiec Lipiec Sierpień Wrzesień Październik Listopad Grudzień
+            ],
+            "abbr_month_names" => %w[
+              Sty Lut Mar Kwi Maj Cze Lip Sie Wrz Paź Lis Gru
+            ]
+          },
           "welcome" => "Witaj",
           "registration" => "Zarejestruj się",
           "log_in" => "Zaloguj się",
@@ -135,6 +151,28 @@ class Languages
           "do_not_have_account" => "Hast du noch kein FACEBOOK-Konto?", # Change facebook!
           "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 
+        }
+      },
+      example: {
+        "example" => {
+          "date" => {
+            "months_names" => %w[
+            ],
+            "abbr_month_names" => %w[
+            ]
+          },
+          "welcome" => "",
+          "registration" => "",
+          "log_in" => "",
+          "log_in_with" => "", # Example: 'with Facebook'
+          "log_out" => "",
+          "email_address" => "",
+          "username" => "",
+          "password" => "",
+          "remember_me" => "",
+          "forgot_password" => "",
+          "do_not_have_account" => "",
+          "lorem" => ""
         }
       }
     }
