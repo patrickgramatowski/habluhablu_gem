@@ -45,7 +45,7 @@ module Habluhablu
     languages = Dir["config/locales/*.yml"]
     languages.each do |file|
       File.open(file.to_s, "a") do |f|
-        f.write(%(  #{keyword}: => ""))
+        f.write(%(  #{keyword}: => ""\n))
       end
     end
   end
