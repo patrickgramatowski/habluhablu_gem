@@ -152,7 +152,50 @@ class Languages
           "forgot_password" => "Passwort vergessen?",
           "do_not_have_account" => "Hast du noch kein FACEBOOK-Konto?", # Change facebook!
           "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
+        }
+      },
+      pt: {
+        "pt" => {
+          "date" => {
+            "months_names" => %w[
+            ],
+            "abbr_month_names" => %w[
+            ]
+          },
+          "welcome" => "Bem-vindo",
+          "registration" => "Cadastrar",
+          "log_in" => "Entrar",
+          "log_in_with" => "Entrar com", # Example: 'with Facebook'
+          "log_out" => "Fazer logoff",
+          "email_address" => "Endereço de E-mail",
+          "username" => "Nome de usuário",
+          "password" => "Senha",
+          "remember_me" => "Lembrar de mim",
+          "forgot_password" => "Esqueceu Sua Senha",
+          "do_not_have_account" => "Não tem uma conta da?", # Example: da Facebook
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      },
+      tr: {
+        "tr" => {
+          "date" => {
+            "months_names" => %w[
+            ],
+            "abbr_month_names" => %w[
+            ]
+          },
+          "welcome" => "Hoşgeldiniz",
+          "registration" => "Kayıt Ol",
+          "log_in" => "Giriş Yap",
+          "log_in_with" => "FACEBOOK ile giriş yap", # Example: 'with Facebook', reaplce facebook!
+          "log_out" => "Çıkış Yap",
+          "email_address" => "E-posta Adresi",
+          "username" => "Kullanıcı adı",
+          "password" => "Şifre",
+          "remember_me" => "Beni hatırla",
+          "forgot_password" => "Şifreni Mi Unuttun?",
+          "do_not_have_account" => "Bir FACEBOOK hesabın yok mu?", # Replace facebook!
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
       example: {
