@@ -48,3 +48,6 @@ Style/OptionalBooleanParameter:
   Exclude:
     - 'lib/languages/languages.rb'
     - 'lib/habluhablu.rb'
+
+Style/FormatStringToken:
+  Enabled: false
