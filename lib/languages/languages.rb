@@ -4,6 +4,8 @@ require "yaml"
 
 # Class comment
 class Languages
+  attr_writer :languages
+
   def initialize(language)
     @language = language.to_sym
     @languages = {
