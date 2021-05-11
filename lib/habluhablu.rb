@@ -40,4 +40,13 @@ module Habluhablu
       f.write(language_class.render)
     end
   end
+
+  def self.keyword(keyword)
+    languages = Dir["config/locales/*.yml"]
+    languages.each do |file|
+      File.open(file.to_s, "a") do |f|
+        f.write(%("#{keyword}" => ""))
+      end
+    end
+  end
 end
