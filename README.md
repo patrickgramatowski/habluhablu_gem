@@ -45,7 +45,8 @@ Or install it yourself as:
 
 Generate file for a specific language using `habluhablu -l <symbol>` command.  
 Generate an example language file using `habluhablu -l example` command (it generates empty file with keywords to fill).     
-Generate files for a more languages using `habluhablu -m <symbols>(separated by '_')` command.    
+Generate files for a more languages using `habluhablu -m <symbols>(separated by '_')` command.  
+To generate a keyword for all languages files use: `habluhablu -k KEYWORD` command.   
 [List of symbols](https://www.w3.org/International/O-charset-lang.html)   
    
 `habluhablu --help`
