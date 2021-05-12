@@ -3,6 +3,7 @@
 
 require "optparse"
 require "habluhablu"
+require "translation"
 
 args = {}
 OptionParser.new do |opts|
@@ -12,6 +13,9 @@ OptionParser.new do |opts|
   opts.on("-m", "--multi SYMBOLS", "Symbols of languages you want to generate files for (en es pl ar)")
   opts.on("-k", "--keyword KEYWORD", "Add your own keyword for all language files (.yml).")
   opts.on("-s", "--sample FILES", "Add your own sample for language files (.yml).")
+  opts.on("-t", "--translate TEXT", "Translation text example: Hello world!")
+  opts.on("-f", "--from SYMBOL", "From example: en")
+  opts.on("-o", "--target SYMBOL", "Target language example: es")
 end.parse!(into: args)
 
 information = lambda do |param|
@@ -23,6 +27,14 @@ information = lambda do |param|
     puts "Something went wrong!"
   end
 end
+
+if args[:from].nil?
+  translator = Translation.new(args[:translate], args[:target])
+else
+  translator = Translation.new(args[:translate], args[:target], args[:from])
+end
+translator.response
+information.call(args[:target])
 
 if args[:sample].nil?
   if args[:multi].nil?

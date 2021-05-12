@@ -51,3 +51,12 @@ Style/OptionalBooleanParameter:
 
 Style/FormatStringToken:
   Enabled: false
+
+Style/GlobalVars:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Style/ConditionalAssignment:
+  Enabled: false
