@@ -19,7 +19,7 @@ class Translation
     @request = Net::HTTP::Post.new(@url)
     @request["content-type"] = "application/x-www-form-urlencoded"
     @request["accept-encoding"] = "application/gzip"
-    @request["x-rapidapi-key"] = '069f34f2bamsha3ef70a3f7e20cap1dcfe9jsn2dcff8d20c4e'
+    @request["x-rapidapi-key"] = 'ef9f61b3d0mshb95dcad44627e7cp176d4bjsn8f4d9e2a1706'
     @request["x-rapidapi-host"] = "google-translate1.p.rapidapi.com"
     @request.body = @text.gsub(" ", "%2C%20") + "!&target=#{@target}&source=#{@source}"
     # Example "q=Hello%2C%20dear%2C%20friend!&target=es&source=en"
