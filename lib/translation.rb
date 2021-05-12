@@ -35,8 +35,8 @@ class Translation
   def response
     puts @request["x-rapidapi-key"]
     response = @http.request(@request)
-    response.read_body[:data][:translations].first[:translatedText]
-    res = response.read_body[:data][:translations].first[:translatedText]
+    response = response.read_body
+    res = response[:data][:translations].first[:translatedText]
     File.open("config/locales/#{@target}", "a+") do |f|
       f.write({ "translation" => "#{res}" }.to_yaml)
     end
