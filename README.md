@@ -49,8 +49,9 @@ Or install it yourself as:
 Generate file for a specific language using `habluhablu -l <symbol>` command.  
 Generate an example language file using `habluhablu -l example` command (it generates empty file with keywords to fill).     
 Generate files for a more languages using `habluhablu -m <symbols>(separated by '_')` command.  
-To generate a keyword for all languages files use: `habluhablu -k KEYWORD` command.   
-If you want to generate your own sample for languages files, You can do it by using `habluhablu -s <symbols>(separated by '_')` command.    
+To generate a keyword for all languages files use: `habluhablu -k KEYWORD` command.     
+To translate a phrase/word use: `habluhablu -t hello_world -f en -o es`, where the command translates 'hello there' to spanish (-o flag).    
+If you want to generate your own sample for languages files, You can do it by using `habluhablu -s <symbols>(separated by '_')` command.      
    
 `habluhablu --help`
 
