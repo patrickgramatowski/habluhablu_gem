@@ -3,6 +3,7 @@
 require "uri"
 require "net/http"
 require "openssl"
+require "json"
 require "yaml"
 
 # Class comment
@@ -35,10 +36,9 @@ class Translation
 
   def response
     response = @http.request(@request)
-    response = response.read_body
-    puts response
+    content = JSON.parse(response.read_body)["data"]["translations"].first["translatedText"]
     File.open("config/locales/#{@target}.yml", "a+") do |f|
-      f.write({ "translation" => response }.to_yaml)
+      f.write({ "Translation" => content }.to_yaml)
     end
   end
 end
