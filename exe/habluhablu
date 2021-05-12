@@ -36,25 +36,27 @@ end
 translator.response
 information.call(args[:target])
 
-if args[:sample].nil?
-  if args[:multi].nil?
-    if args[:keyword].nil?
-      Habluhablu.hablu(args[:language])
-      information.call(args[:language])
-    else
-      Habluhablu.keyword(args[:keyword])
-      puts "..."
-      sleep 0.5
-      puts "Everything was added successfully!"
-    end
-  else
-    languages_array = args[:multi].split("_")
-    languages_array.each do |language|
-      Habluhablu.hablu(language)
-    end
-    information.call(languages_array.last)
+if args[:language].nil? == false
+  Habluhablu.hablu(args[:language])
+  information.call(args[:language])
+end
+
+if args[:keyword].nil? == false
+  Habluhablu.keyword(args[:keyword])
+  puts "..."
+  sleep 0.5
+  puts "Everything was added successfully!"
+end
+
+if args[:multi].nil? == false
+  languages_array = args[:multi].split("_")
+  languages_array.each do |language|
+    Habluhablu.hablu(language)
   end
-else
+  information.call(languages_array.last)
+end
+
+if args[:sample].nil? == false
   Habluhablu.render_sample(args[:sample])
   information.call("sample")
 end
