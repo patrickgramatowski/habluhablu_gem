@@ -23,7 +23,7 @@ class Translation
       $KEY = f.read
     end
     if $KEY.nil?
-      @request["x-rapidapi-key"] = "069f34f2bamsha3ef70a3f7e20cap1dcfe9jsn2dcff8d20c4e"
+      @request["x-rapidapi-key"] = '069f34f2bamsha3ef70a3f7e20cap1dcfe9jsn2dcff8d20c4e'
     else
       @request["x-rapidapi-key"] = $KEY
     end
@@ -35,9 +35,9 @@ class Translation
   def response
     puts @request["x-rapidapi-key"]
     response = @http.request(@request)
-    response = response.read_body
+    res = response.read_body
     File.open("config/locales/#{@target}.yml", "a+") do |f|
-      f.write({ "translation" => "#{response}" }.to_yaml)
+      f.write({ "translation" => res.to_s }.to_yaml)
     end
   end
 end

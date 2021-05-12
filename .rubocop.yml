@@ -11,6 +11,8 @@ Layout/EndOfLine:
 Style/StringLiterals:
   Enabled: true
   EnforcedStyle: double_quotes
+  Exclude:
+    - 'lib/translation.rb'
 
 Style/StringLiteralsInInterpolation:
   Enabled: true
