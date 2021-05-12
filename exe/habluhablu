@@ -29,7 +29,7 @@ information = lambda do |param|
 end
 
 if args[:translate].nil? == false
-  if args[:from].nil? == false 
+  if args[:from].nil? == false
     translator = Translation.new(args[:translate], args[:target])
   else
     translator = Translation.new(args[:translate], args[:target], args[:from])
