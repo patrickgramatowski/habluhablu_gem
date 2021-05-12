@@ -23,19 +23,18 @@ class Translation
       $KEY = f.read
     end
     if $KEY.length <= 2 || $KEY.nil?
-      @request["x-rapidapi-key"] = '89b4128ab1msh3cd8b86cdb0fec2p1e1b5bjsn59a3eed82a2f'
+      @request["x-rapidapi-key"] = '069f34f2bamsha3ef70a3f7e20cap1dcfe9jsn2dcff8d20c4e'
     else
       @request["x-rapidapi-key"] = $KEY
     end
     @request["x-rapidapi-host"] = "google-translate1.p.rapidapi.com"
-    @request.body = "q=" + @text.gsub(" ", "%2C%20") + "!&target=#{@target}&source=#{@source}"
+    @request.body = "q=" + @text.gsub("_", "%2C%20") + "!&target=#{@target}&source=#{@source}"
     # Example "q=Hello%2C%20dear%2C%20friend!&target=es&source=en"
   end
 
   def response
-    puts @request["x-rapidapi-key"]
     response = @http.request(@request)
-    res = response.read_body
+    res = response.read_body[:data][:translations].first[:translatedText]
     File.open("config/locales/#{@target}.yml", "a+") do |f|
       f.write({ "translation" => res.to_s }.to_yaml)
     end

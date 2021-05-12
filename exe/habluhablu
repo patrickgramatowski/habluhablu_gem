@@ -13,7 +13,7 @@ OptionParser.new do |opts|
   opts.on("-m", "--multi SYMBOLS", "Symbols of languages you want to generate files for (en es pl ar)")
   opts.on("-k", "--keyword KEYWORD", "Add your own keyword for all language files (.yml).")
   opts.on("-s", "--sample FILES", "Add your own sample for language files (.yml).")
-  opts.on("-t", "--translate TEXT", "Translation text example: Hello world!")
+  opts.on("-t", "--translate TEXT", "Translation text example: Hello_world_test!")
   opts.on("-f", "--from SYMBOL", "From example: en")
   opts.on("-o", "--target SYMBOL", "Target language example: es")
 end.parse!(into: args)
