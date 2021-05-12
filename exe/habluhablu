@@ -28,10 +28,12 @@ information = lambda do |param|
   end
 end
 
-if args[:from].nil?
-  translator = Translation.new(args[:translate], args[:target])
-else
-  translator = Translation.new(args[:translate], args[:target], args[:from])
+if args[:translate].nil? == false
+  if args[:from].nil? == false 
+    translator = Translation.new(args[:translate], args[:target])
+  else
+    translator = Translation.new(args[:translate], args[:target], args[:from])
+  end
 end
 translator.response
 information.call(args[:target])

@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 module Habluhablu
-  VERSION = "0.3.85"
+  VERSION = "0.3.88"
 end
