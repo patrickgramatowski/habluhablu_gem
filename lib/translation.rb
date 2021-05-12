@@ -33,6 +33,7 @@ class Translation
   end
 
   def response
+    puts @request["x-rapidapi-key"]
     response = @http.request(@request)
     response = response.read_body[:data][:translations].first[:translatedText]
     File.open("config/locales/#{@target}", "a+") do |f|
