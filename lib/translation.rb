@@ -25,7 +25,7 @@ class Translation
       $KEY = f.read
     end
     if $KEY.length <= 2 || $KEY.nil?
-      @request["x-rapidapi-key"] = '069f34f2bamsha3ef70a3f7e20cap1dcfe9jsn2dcff8d20c4e'
+      @request["x-rapidapi-key"] = 'ef9f61b3d0mshb95dcad44627e7cp176d4bjsn8f4d9e2a1706'
     else
       @request["x-rapidapi-key"] = $KEY
     end
@@ -36,9 +36,13 @@ class Translation
 
   def response
     response = @http.request(@request)
-    content = JSON.parse(response.read_body)["data"]["translations"].first["translatedText"]
+    content = JSON.parse(response.read_body)
+    content = content["data"]["translations"].first["translatedText"]
     File.open("config/locales/#{@target}.yml", "a+") do |f|
-      f.write({ "Translation" => content }.to_yaml)
+      f.write({ "translation" => content.to_s }.to_yaml)
     end
   end
 end
+
+tr = Translation.new("Hi_there", "es")
+tr.response
