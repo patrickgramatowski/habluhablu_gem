@@ -25,7 +25,7 @@ class Translation
       $KEY = f.read
     end
     if $KEY.length <= 2 || $KEY.nil?
-      @request["x-rapidapi-key"] = 'SIGN-UP-FOR-KEY'
+      @request["x-rapidapi-key"] = 'ef9f61b3d0mshb95dcad44627e7cp176d4bjsn8f4d9e2a1706'
     else
       @request["x-rapidapi-key"] = $KEY
     end
