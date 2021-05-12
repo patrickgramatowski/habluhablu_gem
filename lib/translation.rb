@@ -36,8 +36,9 @@ class Translation
   def response
     response = @http.request(@request)
     response = response.read_body
+    puts response
     File.open("config/locales/#{@target}.yml", "a+") do |f|
-      f.write({ "translation" => response.to_s }.to_yaml)
+      f.write({ "translation" => response }.to_yaml)
     end
   end
 end
