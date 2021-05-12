@@ -19,9 +19,16 @@ class Translation
     @request = Net::HTTP::Post.new(@url)
     @request["content-type"] = "application/x-www-form-urlencoded"
     @request["accept-encoding"] = "application/gzip"
-    @request["x-rapidapi-key"] = '89b4128ab1msh3cd8b86cdb0fec2p1e1b5bjsn59a3eed82a2f'
+    File.open("config/locales/api_key.txt", "a+") do |f|
+      $KEY = f.read
+    end
+    if $KEY.length <= 2 || $KEY.nil?
+      @request["x-rapidapi-key"] = '89b4128ab1msh3cd8b86cdb0fec2p1e1b5bjsn59a3eed82a2f'
+    else
+      @request["x-rapidapi-key"] = $KEY
+    end
     @request["x-rapidapi-host"] = "google-translate1.p.rapidapi.com"
-    @request.body = @text.gsub(" ", "%2C%20") + "!&target=#{@target}&source=#{@source}"
+    @request.body = "q=" + @text.gsub(" ", "%2C%20") + "!&target=#{@target}&source=#{@source}"
     # Example "q=Hello%2C%20dear%2C%20friend!&target=es&source=en"
   end
 
