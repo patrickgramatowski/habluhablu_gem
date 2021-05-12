@@ -27,7 +27,7 @@ What about ancient Greek and other ancient languages? :scroll:
 
 **Important!**
 To be able to use the gem:
-- Install [I18n gem](https://github.com/ruby-i18n/i18n) || Create config/locales
+- Install [I18n gem](https://github.com/ruby-i18n/i18n)
 
 Add this line to your application's Gemfile:
 
