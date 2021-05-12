@@ -3,11 +3,12 @@
 require "uri"
 require "net/http"
 require "openssl"
+require "yaml"
 
 # Class comment
 class Translation
   def initialize(text, target, source = "en")
-    @text = text
+    @text = text.gsub("_", "%2C%20")
     @target = target
     @source = source
     @url = URI("https://google-translate1.p.rapidapi.com/language/translate/v2")
@@ -28,15 +29,15 @@ class Translation
       @request["x-rapidapi-key"] = $KEY
     end
     @request["x-rapidapi-host"] = "google-translate1.p.rapidapi.com"
-    @request.body = "q=" + @text.gsub("_", "%2C%20") + "!&target=#{@target}&source=#{@source}"
+    @request.body = "q=#{@text}!&target=#{@target}&source=#{@source}"
     # Example "q=Hello%2C%20dear%2C%20friend!&target=es&source=en"
   end
 
   def response
     response = @http.request(@request)
-    res = response.read_body[:data][:translations].first[:translatedText]
+    response = response.read_body
     File.open("config/locales/#{@target}.yml", "a+") do |f|
-      f.write({ "translation" => res.to_s }.to_yaml)
+      f.write({ "translation" => response.to_s }.to_yaml)
     end
   end
 end
