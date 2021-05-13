@@ -31,7 +31,7 @@ end
 
 if args[:json].nil? == false
   Languages.new("en").render_json(args[:json])
-  information.call(args[:json], "json")
+  information.call(args[:json].split("_").first, "json")
 end
 
 if args[:translate].nil? == false
