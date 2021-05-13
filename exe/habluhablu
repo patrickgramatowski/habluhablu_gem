@@ -16,6 +16,7 @@ OptionParser.new do |opts|
   opts.on("-t", "--translate TEXT", "Translation text example: Hello_world_test!")
   opts.on("-f", "--from SYMBOL", "From example: en")
   opts.on("-o", "--target SYMBOL", "Target language example: es")
+  opts.on("-j", "--json SYMBOL", "Render languages' json files.")
 end.parse!(into: args)
 
 information = lambda do |param|
@@ -28,15 +29,20 @@ information = lambda do |param|
   end
 end
 
+if args[:json].nil? == false
+  Languages.new("en").render_json(args[:json])
+  information.call(args[:json])
+end
+
 if args[:translate].nil? == false
   if args[:from].nil? == false
     translator = Translation.new(args[:translate], args[:target])
   else
     translator = Translation.new(args[:translate], args[:target], args[:from])
   end
+  translator.response
+  information.call(args[:target])
 end
-translator.response
-information.call(args[:target])
 
 if args[:language].nil? == false
   Habluhablu.hablu(args[:language])
