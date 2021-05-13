@@ -27,6 +27,7 @@ es:
     - Oct
     - Nov
     - Dic
+  language: Español
   welcome: Bienvenido
   registration: Regístrate
   log_in: Iniciar sesión
@@ -37,7 +38,7 @@ es:
   password: Contraseña
   remember_me: Recordarme
   forgot_password: "¿Has olvidado tu contraseña?"
-  do_not_have_account: "¿No tienes una cuenta?"
+  do_not_have_account: "¿No tienes una cuenta en %{register}?"
   lorem: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute

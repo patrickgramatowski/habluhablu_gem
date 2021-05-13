@@ -16,10 +16,11 @@ OptionParser.new do |opts|
   opts.on("-t", "--translate TEXT", "Translation text example: Hello_world_test!")
   opts.on("-f", "--from SYMBOL", "From example: en")
   opts.on("-o", "--target SYMBOL", "Target language example: es")
+  opts.on("-j", "--json SYMBOL", "Render languages' json files.")
 end.parse!(into: args)
 
-information = lambda do |param|
-  if File.exist?("config/locales/#{param}.yml")
+information = lambda do |param, exe|
+  if File.exist?("config/locales/#{param}.#{exe}")
     puts "..."
     sleep 0.5
     puts "Everything was generated successfully!"
@@ -28,19 +29,24 @@ information = lambda do |param|
   end
 end
 
+if args[:json].nil? == false
+  Languages.new("en").render_json(args[:json])
+  information.call(args[:json].split("_").first, "json")
+end
+
 if args[:translate].nil? == false
   if args[:from].nil? == false
     translator = Translation.new(args[:translate], args[:target])
   else
     translator = Translation.new(args[:translate], args[:target], args[:from])
   end
+  translator.response
+  information.call(args[:target], "yml")
 end
-translator.response
-information.call(args[:target])
 
 if args[:language].nil? == false
   Habluhablu.hablu(args[:language])
-  information.call(args[:language])
+  information.call(args[:language], "yml")
 end
 
 if args[:keyword].nil? == false
@@ -55,10 +61,10 @@ if args[:multi].nil? == false
   languages_array.each do |language|
     Habluhablu.hablu(language)
   end
-  information.call(languages_array.last)
+  information.call(languages_array.last, "yml")
 end
 
 if args[:sample].nil? == false
   Habluhablu.render_sample(args[:sample])
-  information.call("sample")
+  information.call("sample", "yml")
 end
