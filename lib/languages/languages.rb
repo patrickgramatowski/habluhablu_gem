@@ -1,9 +1,11 @@
 # frozen_string_literal: true
 
 require "yaml"
+require_relative "render_json"
 
 # Class comment
 class Languages
+  include RenderJson
   attr_writer :languages
 
   def initialize(language)
@@ -11,6 +13,7 @@ class Languages
     @languages = {
       ar: {
         "ar" => {
+          "language" => "العربية",
           "welcome" => "مرحبا",
           "registration" => "عنوان البريد الإلكتروني",
           "log_in" => "تسجيل الدخول",
@@ -27,6 +30,7 @@ class Languages
       },
       en: {
         "en" => {
+          "language" => "English",
           "welcome" => "Welcome",
           "registration" => "Registartion",
           "log_in" => "Log in",
@@ -51,6 +55,7 @@ class Languages
               Ene Feb Mar Abr May Jun Jul Ago Set Oct Nov Dic
             ]
           },
+          "language" => "Español",
           "welcome" => "Bienvenido",
           "registration" => "Regístrate",
           "log_in" => "Iniciar sesión",
@@ -75,6 +80,7 @@ class Languages
               Sty Lut Mar Kwi Maj Cze Lip Sie Wrz Paź Lis Gru
             ]
           },
+          "language" => "Polski",
           "welcome" => "Witaj",
           "registration" => "Zarejestruj się",
           "log_in" => "Zaloguj się",
@@ -92,6 +98,7 @@ class Languages
       iw: {
         "iw" => {
           # I'm not sure about this translation, it has to be checked!!
+          "language" => "עִברִית",
           "welcome" => "שלום",
           "registration" => "הירשם",
           "log_in" => "להתחבר",
@@ -108,6 +115,7 @@ class Languages
       },
       fr: {
         "fr" => {
+          "language" => "Français",
           "welcome" => "Bienvenu", # bienvenue female
           "registration" => "Créer un compte",
           "log_in" => "Connexion",
@@ -124,6 +132,7 @@ class Languages
       },
       it: {
         "it" => {
+          "language" => "Italiano",
           "welcome" => "Benvenuto", # benvenuta female
           "registration" => "Iscriviti",
           "log_in" => "Accedi",
@@ -140,6 +149,7 @@ class Languages
       },
       de: {
         "de" => {
+          "language" => "Deutsch",
           "welcome" => "Willkommen",
           "registration" => "Registrieren",
           "log_in" => "Anmelden",
@@ -156,6 +166,7 @@ class Languages
       },
       ru: {
         "ru" => {
+          "language" => "Русский",
           "welcome" => "Добро пожаловать",
           "registration" => "Зарегистрироваться",
           "log_in" => "Вход",
@@ -172,6 +183,7 @@ class Languages
       },
       ja: {
         "ja" => {
+          "language" => "日本語",
           "welcome" => "ようこそ",
           "registration" => "サインアップ",
           "log_in" => "サインイン",
@@ -194,6 +206,7 @@ class Languages
             "abbr_month_names" => %w[
             ]
           },
+          "language" => "Português",
           "welcome" => "Bem-vindo",
           "registration" => "Cadastrar",
           "log_in" => "Entrar",
@@ -216,6 +229,7 @@ class Languages
             "abbr_month_names" => %w[
             ]
           },
+          "language" => "Türkçe",
           "welcome" => "Hoşgeldiniz",
           "registration" => "Kayıt Ol",
           "log_in" => "Giriş Yap",
@@ -238,6 +252,7 @@ class Languages
             "abbr_month_names" => %w[
             ]
           },
+          "language" => "",
           "welcome" => "",
           "registration" => "",
           "log_in" => "",
