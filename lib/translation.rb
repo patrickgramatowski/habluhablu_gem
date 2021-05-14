@@ -43,6 +43,3 @@ class Translation
     end
   end
 end
-
-tr = Translation.new("Hi_there", "es")
-tr.response
