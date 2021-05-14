@@ -17,6 +17,7 @@ What about ancient Greek and other ancient languages? :scroll:
 - Italian
 - Japanese
 - Russian
+- Korean
 - Portuguese
 - Turkish
 - Polish
