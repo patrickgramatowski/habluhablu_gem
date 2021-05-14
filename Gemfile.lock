@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    habluhablu (0.5.1)
+    habluhablu (0.5.2)
 
 GEM
   remote: https://rubygems.org/
