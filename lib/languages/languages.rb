@@ -244,6 +244,29 @@ class Languages
           "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       },
+      ko: {
+        "ko" => {
+          "date" => {
+            "months_names" => %w[
+            ],
+            "abbr_month_names" => %w[
+            ]
+          },
+          "language" => "한국어",
+          "welcome" => "안녕하세요",
+          "registration" => "가입",
+          "log_in" => "로그인",
+          "log_in_with" => "%{replace}으로 로그인", # Example: 'with Facebook' carefully!
+          "log_out" => "로그아웃",
+          "email_address" => "이메일 주소",
+          "username" => "사용자 이름",
+          "password" => "비밀번호",
+          "remember_me" => "사용자 이름 저장",
+          "forgot_password" => "비밀번호를 잊으셨나요?",
+          "do_not_have_account" => "%{register}계정이 없으신가요?",
+          "lorem" => "국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다."
+        }
+      },
       example: {
         "example" => {
           "date" => {
