@@ -267,6 +267,29 @@ class Languages
           "lorem" => "국민경제의 발전을 위한 중요정책의 수립에 관하여 대통령의 자문에 응하기 위하여 국민경제자문회의를 둘 수 있다."
         }
       },
+      th: {
+        "th" => {
+          "date" => {
+            "months_names" => %w[
+            ],
+            "abbr_month_names" => %w[
+            ]
+          },
+          "language" => "ไทย",
+          "welcome" => "ยินดีต้อนรับ",
+          "registration" => "ลงทะเบียน",
+          "log_in" => "ลงชื่อเข้าใช้",
+          "log_in_with" => "ลงชื่อเข้าใช้ด้วย %(replace)", # Example: 'with Facebook'
+          "log_out" => "ลงชื่อออก",
+          "email_address" => "อีเมล",
+          "username" => "ชื่อผู้ใช้",
+          "password" => "รหัสผ่าน",
+          "remember_me" => "จำฉันไว้",
+          "forgot_password" => "ลืมรหัสผ่าน",
+          "do_not_have_account" => "ไม่มีบัญชี %(register) ใช่ไหม",
+          "lorem" => "เป็นข้อความแทนที่ ใช้เพื่อลดความสนใจต่อข้อความที่นำมาแสดง สำหรับการแสดงลักษณะของ ฟอนต์ การพิมพ์และการจัดหน้า"
+        }
+      },
       example: {
         "example" => {
           "date" => {
