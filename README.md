@@ -21,6 +21,7 @@ What about ancient Greek and other ancient languages? :scroll:
 - Portuguese
 - Turkish
 - Polish
+- Thai (th - symbol)
 - Arabic
 - Hebrew
 - If you want to help me out and add your language, don't hesitate!
