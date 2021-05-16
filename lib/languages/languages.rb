@@ -290,6 +290,29 @@ class Languages
           "lorem" => "เป็นข้อความแทนที่ ใช้เพื่อลดความสนใจต่อข้อความที่นำมาแสดง สำหรับการแสดงลักษณะของ ฟอนต์ การพิมพ์และการจัดหน้า"
         }
       },
+      zh: {
+        "zh" => {
+          "date" => {
+            "months_names" => %w[
+            ],
+            "abbr_month_names" => %w[
+            ]
+          },
+          "language" => "简体中文",
+          "welcome" => "欢迎",
+          "registration" => "注册",
+          "log_in" => "登录",
+          "log_in_with" => "登录 %(replace)", # Example: 'with Facebook'
+          "log_out" => "登出",
+          "email_address" => "电子邮件地址",
+          "username" => "用户名",
+          "password" => "密码",
+          "remember_me" => "记住我",
+          "forgot_password" => "忘记密码",
+          "do_not_have_account" => "还没有 %(register) 账户？",
+          "lorem" => "側経意責家方家閉討店暖育田庁載社転線宇。得君新術治温抗添代話考振投員殴大闘北裁。品間識部案代学凰処済準世一戸刻法分。悼測済諏計飯利安凶断理資沢同岩面文認革。内警格化再薬方久化体教御決数詭芸得筆代。"
+        }
+      },
       example: {
         "example" => {
           "date" => {
