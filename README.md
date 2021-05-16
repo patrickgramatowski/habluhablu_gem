@@ -50,7 +50,7 @@ Or install it yourself as:
 
 ### Usage
 
-[List of symbols](https://www.w3.org/International/O-charset-lang.html)   
+[List of symbols](https://www.w3.org/International/O-charset-lang.html)      
 Generate file for a specific language using `habluhablu -l <symbol>` command.
    
 Generate an example language file using `habluhablu -l example` command (it generates empty file with keywords to fill).    
