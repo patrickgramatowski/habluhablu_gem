@@ -63,7 +63,9 @@ To translate a phrase/word use: `habluhablu -t hello_world -f en -o es`, where t
      
 **Important!** to use translator you will have to create an account [Google API](https://rapidapi.com/googlecloud/api/google-translate1) and put api_key into api_key.txt file in config/locales directory.  
     
-If you want to generate your own sample for languages files, You can do it by using `habluhablu -s <symbols>(separated by '_')` command.  
+If you want to generate your own sample for languages files, You can do it by:     
+- creating your own sample.yml file in config/locales directory    
+- using `habluhablu -s <symbols>(separated by '_')` command    
     
 Generate a json file of the languages you want, use `habluhablu -j <symbols>(separated by '_')` command.   
    
