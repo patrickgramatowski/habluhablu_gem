@@ -22,6 +22,7 @@ What about ancient languages? :scroll:
 - Turkish
 - Polish
 - Thai (th - symbol)
+- Chinese (zh - symbol)
 - Arabic
 - Hebrew
 - If you want to help me out and add your language, don't hesitate!
