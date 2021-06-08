@@ -25,7 +25,7 @@ class Translation
       $KEY = f.read
     end
     if $KEY.length <= 2 || $KEY.nil?
-      @request["x-rapidapi-key"] = 'Add google api key'
+      @request["x-rapidapi-key"] = 'Add your google api key!'
     else
       @request["x-rapidapi-key"] = $KEY
     end
