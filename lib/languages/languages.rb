@@ -313,6 +313,29 @@ class Languages
           "lorem" => "側経意責家方家閉討店暖育田庁載社転線宇。得君新術治温抗添代話考振投員殴大闘北裁。品間識部案代学凰処済準世一戸刻法分。悼測済諏計飯利安凶断理資沢同岩面文認革。内警格化再薬方久化体教御決数詭芸得筆代。"
         }
       },
+      hu: {
+        "hu" => {
+          "date" => {
+            "months_names" => %w[
+            ],
+            "abbr_month_names" => %w[
+            ]
+          },
+          "language" => "Magyar",
+          "welcome" => "Üdvözöljük",
+          "registration" => "Fiók létrehozása",
+          "log_in" => "Bejelentkezés",
+          "log_in_with" => "Jelentkezz be %(replace)", # Example: 'with Facebook'
+          "log_out" => "Kijelentkezés",
+          "email_address" => "E-mail-címet",
+          "username" => "Felhasználónév",
+          "password" => "Jelszó",
+          "remember_me" => "Maradjak bejelentkezve",
+          "forgot_password" => "Nem tudsz bejelentkezni?",
+          "do_not_have_account" => "Nincs %(register) fiókja?",
+          "lorem" => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      },
       example: {
         "example" => {
           "date" => {
