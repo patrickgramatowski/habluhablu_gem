@@ -21,6 +21,7 @@ What about ancient languages? :scroll:
 - Portuguese
 - Turkish
 - Polish
+- Hungarian
 - Thai (th - symbol)
 - Chinese (zh - symbol)
 - Arabic
