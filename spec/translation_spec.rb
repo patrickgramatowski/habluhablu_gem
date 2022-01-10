@@ -10,6 +10,8 @@ RSpec.describe Translation do
       let(:api_google) { double("Google Api") }
       let(:expected) { "amigo" }
       it "returns valid translation" do
+        allow(ENV).to receive(:fetch).with('HABLUHABLU_API_KEY', "google_api_key_here")
+                                     .and_return("google_api_key_here")
         allow(api_google)
           .to receive(:request)
           .with("friend")

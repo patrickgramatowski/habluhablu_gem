@@ -363,10 +363,12 @@ class Languages
   end
 
   def include_language?
-    @languages.key?(@language) ? true : false
+    @languages.key?(@language)
   end
 
   def render
-    @languages.key?(@language) ? @languages[@language].to_yaml : "No language in the lib (YET!)"
+    raise Habluhablu::NoLanguageSymbolYet.new unless @languages.key?(@language)
+
+    @languages[@language].to_yaml
   end
 end

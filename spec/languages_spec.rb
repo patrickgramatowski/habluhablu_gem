@@ -6,9 +6,8 @@ RSpec.describe Languages do
   describe "#render" do
     context "when invalid langauge passed" do
       let!(:obj) { described_class.new("isss").render }
-      let(:info) { "No language in the lib (YET!)" }
-      it "returns invalid info" do
-        expect(obj).to eql(info)
+      it "raises NoLanguageSymbolYet error" do
+        expect { obj }.to raise_error(Habluhablu::NoLanguageSymbolYet)
       end
     end
   end

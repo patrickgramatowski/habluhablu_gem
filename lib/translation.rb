@@ -21,13 +21,13 @@ class Translation
     @request = Net::HTTP::Post.new(@url)
     @request["content-type"] = "application/x-www-form-urlencoded"
     @request["accept-encoding"] = "application/gzip"
-    File.open("config/locales/api_key.txt", "a+") do |f|
-      $KEY = f.read
-    end
-    if $KEY.length <= 2 || $KEY.nil?
+
+    @key = ENV['HABLUHABLU_API_KEY']
+
+    if @key.nil?
       @request["x-rapidapi-key"] = 'Add your google api key!'
     else
-      @request["x-rapidapi-key"] = $KEY
+      @request["x-rapidapi-key"] = @key
     end
     @request["x-rapidapi-host"] = "google-translate1.p.rapidapi.com"
     @request.body = "q=#{@text}!&target=#{@target}&source=#{@source}"

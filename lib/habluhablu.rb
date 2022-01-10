@@ -7,6 +7,13 @@ require_relative "languages/languages"
 module Habluhablu
   class Error < StandardError; end
 
+  # Raise error if wrong language symbol passed
+  class NoLanguageSymbolYet < Error
+    def initialize
+      super("No language in the lib (YET!)")
+    end
+  end
+
   # Cutom error with helpful message
   class WrongSymbolError < Error
     def initialize(language)
