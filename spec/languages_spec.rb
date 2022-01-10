@@ -5,8 +5,8 @@ require "json"
 RSpec.describe Languages do
   describe "#render" do
     context "when invalid langauge passed" do
-      let!(:obj) { described_class.new("isss").render }
-      it "raises NoLanguageSymbolYet error" do
+      let(:obj) { described_class.new("isss").render }
+      it "throws an error" do
         expect { obj }.to raise_error(Habluhablu::NoLanguageSymbolYet)
       end
     end

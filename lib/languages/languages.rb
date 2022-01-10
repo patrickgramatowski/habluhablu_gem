@@ -367,7 +367,9 @@ class Languages
   end
 
   def render
-    raise Habluhablu::NoLanguageSymbolYet.new unless @languages.key?(@language)
+    unless @languages.key?(@language)
+      raise Habluhablu::NoLanguageSymbolYet.new, "No language in the lib (YET!)"
+    end
 
     @languages[@language].to_yaml
   end
