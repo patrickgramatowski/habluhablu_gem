@@ -62,7 +62,7 @@ To generate a keyword for all languages files use: `habluhablu -k <keyword>` com
     
 To translate a phrase/word use: `habluhablu -t hello_world -f en -o es`, where the command translates 'hello there' to spanish (-o flag).    
      
-**Important!** to use translator you will have to create an account [Google API](https://rapidapi.com/googlecloud/api/google-translate1) and put api_key into api_key.txt file in config/locales directory.  
+**Important!** to use translator you will have to create an account [Google API](https://rapidapi.com/googlecloud/api/google-translate1) and set the api key as ENV variable - `ENV['HABLUHABLU_API_KEY']`  
     
 If you want to generate your own sample for languages files, You can do it by:     
 - creating your own sample.yml file in config/locales directory    
